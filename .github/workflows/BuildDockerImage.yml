@@ -10,7 +10,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
   docker:
-    uses: vMario/github_actions_reusable_workflows/.github/workflows/BuildAndPublishDockerImage.yml@main
+    uses: vMarioDev/github_actions_reusable_workflows/.github/workflows/BuildAndPublishDockerImage.yml@main
     with:
       image_name: my-awesome-app
       tag: $GITHUB_RUN_NUMBER
