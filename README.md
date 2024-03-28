@@ -10,7 +10,6 @@
 - New > HTTP > change method as POST > add URL as `https://api.github.com/repos/vMarioDev/github_actions_workshop/dispatches`
 - Under the **Header** tab unselect **Accept** and create new **Accept** along with value `application/vnd.github+json`
 - Navigate to **Autorization** tab paste Personal Access Token (generated from Github aettings ) as **Bearer Token**
-  - e.q `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`
   - The token should be appered under the **Header** tab as value of **Authorization** key
 - Under the Body tab > select raw and paste the following:
 
