@@ -1,0 +1,20 @@
+name: Github Actions Repository Dispatch
+run-name: Github Actions Events
+on:
+  repository_dispatch:
+    types: [test_result]
+  jobs:
+    Get-Environemnt-Variables:
+      runs-in: ubuntu-latest
+      steps:
+        - name: Read Environemnt Variables
+          run: |
+            echo "GITHUB_EVENT_NAME: ${{ github.event.name }}"
+            echo "GITHUB_SHA: ${{ github.sha }}"
+            echo "GITHUB_REF: ${{ github.ref }}"
+            echo "GITHUB_REF_NAME: ${{ github.ref_name }}"
+        - name: Parsing client payload message
+          run: |
+            echo $MESSAGE
+          env:
+            MESSAGE: ${{ github.event.client_payload.message }}
