@@ -4,8 +4,8 @@ on:
   repository_dispatch:
     types: [test_result]
   jobs:
-    Get-Environemnt-Variables:
-      runs-in: ubuntu-latest
+    Get-Environment-Variables:
+      runs-on: ubuntu-latest
       steps:
         - name: Read Environemnt Variables
           run: |
