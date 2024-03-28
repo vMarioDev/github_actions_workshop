@@ -45,4 +45,4 @@ on:
 ```
 
 - Commit the changes
-- The pipeline sholdn't be triggered automatically 
+- The pipeline sholdn't be triggered automatically .
