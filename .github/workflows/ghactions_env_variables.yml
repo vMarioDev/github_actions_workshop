@@ -2,8 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env: 
-  API_KEY: "1234567_set_at_workflow_level"
-
+  API_KEY: ${{ vars.API_KEY }}
 jobs:
   Run-Python-Script:
     runs-on: ubuntu-latest
