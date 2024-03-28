@@ -13,4 +13,4 @@ jobs:
       - name: Get Python version
         run: python --version
       - name: Run script
-        run: env.py 
+        run: python env.py 
